@@ -30,7 +30,7 @@ hydra -V -l admin -P /usr/share/wordlists/rockyou.txt 10.10.10.10 http-get-form 
 
 # <p align=center>NMAP</p>
 
-### Scan Verbose & 
+### Aggresive & Verbose Scan
 ```
 nmap -v -A [IP]  
 ```
