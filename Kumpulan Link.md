@@ -1,6 +1,6 @@
 ## Pak Riyan ## 
 
-[How to send command witout spaces](https://unix.stackexchange.com/questions/351331/how-to-send-a-command-with-arguments-without-spaces)
+[https://unix.stackexchange.com/questions/351331/how-to-send-a-command-with-arguments-without-spaces]
 
 [https://exploit.linuxsec.org/command-injection-bypass-cheatsheet]
 
@@ -34,8 +34,6 @@
 
 [https://turbocommons.org/en/app/stringutils/count-capital-letters]
 
-[https://www.niagahoster.co.id/blog/api-adalah/#Apa_itu_API]
-
 
 ## Pak Dodi ##
 
@@ -61,3 +59,12 @@
 
 [https://cryptichacker.github.io/tabs/categories/]
 
+[https://www.niagahoster.co.id/blog/api-adalah/#Apa_itu_API]
+
+[Hide OS Server Version](https://stackoverflow.com/questions/9000853/apache-how-to-hide-server-version-and-operation-system-from-users)
+
+[Disable Directory Listing](https://www.linuxid.net/25413/cara-mudah-disable-directory-listing-di-apache/)
+
+[Search File On Linux](https://www.belajarlinux.org/perintah-mencari-file-di-terminal-linux/)
+
+[https://www.belajarlinux.org/cara-mengatur-hak-akses-user-linux-terhadap-shell-dan-sudoers/]
