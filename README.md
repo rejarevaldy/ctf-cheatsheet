@@ -27,3 +27,10 @@ Example :
 ```
 hydra -V -l admin -P /usr/share/wordlists/rockyou.txt 10.10.10.10 http-get-form "/DVWA/vulnerabilities/brute:username=admin&password=^PASS^:Username and/or password incorrect."
 ```
+
+# <p align=center>NMAP</p>
+
+### Scan 
+```
+nmap -v -A [IP]  
+```
