@@ -1,6 +1,6 @@
 ## Pak Riyan ## 
 
-[https://unix.stackexchange.com/questions/351331/how-to-send-a-command-with-arguments-without-spaces]
+[How to send command witout spaces](https://unix.stackexchange.com/questions/351331/how-to-send-a-command-with-arguments-without-spaces)
 
 [https://exploit.linuxsec.org/command-injection-bypass-cheatsheet]
 
@@ -34,6 +34,8 @@
 
 [https://turbocommons.org/en/app/stringutils/count-capital-letters]
 
+[https://www.niagahoster.co.id/blog/api-adalah/#Apa_itu_API]
+
 
 ## Pak Dodi ##
 
@@ -59,4 +61,3 @@
 
 [https://cryptichacker.github.io/tabs/categories/]
 
-[https://www.niagahoster.co.id/blog/api-adalah/#Apa_itu_API]
