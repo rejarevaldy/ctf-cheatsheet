@@ -41,3 +41,18 @@ nmap -v -A [IP]
 ```
 gobuster dir -u [URL] -w [WORDLIST] 
 ```
+
+# <p align=center>Sqlmap</p>
+
+### SQL Injection from File
+```
+sqlmap -r [FILE LOCATION] --dbs
+```
+### SQL DUMP
+```
+sqlmap -r [FILE LOCATION] --dump
+```
+Example :
+```
+sqlmap -r Belajar/learn/sqlmap/latihan.txt --dbs
+```
