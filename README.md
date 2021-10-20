@@ -12,6 +12,14 @@ john --list=formats
 ```
 john --formats=[HASH] [FILE]
 ```
+### PDF2John Online Tool
+```
+https://www.onlinehashcrack.com/tools-pdf-hash-extractor.php
+```
+### ZIP2John Command
+```
+zip2john [FILE]
+```
 
 # <p align=center>Hydra</p>
 
@@ -55,4 +63,24 @@ sqlmap -r [FILE LOCATION] --dump
 Example :
 ```
 sqlmap -r Belajar/learn/sqlmap/latihan.txt --dbs
+```
+
+# <p align=center>Reverse</p>
+
+### Tools
+
+- strings
+- ltrace
+- r2 -d
+- gdb
+
+### Reverse Shell
+Python Spawning Bash
+```
+python -c 'import pty; pty.spawn("/bin/bash")'
+```
+Export Shell
+```
+export SHELL=bash
+export TERM=xterm-256color
 ```
