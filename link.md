@@ -45,3 +45,9 @@
 ## <p id='defense'> Defense </p>
 
 - [CVE](https://www.cvedetails.com/version-list/45/66/1/Apache-Http-Server.html?sha=929c1c175882db7b5d4cbaf49695c3bf40434350&order=1&trc=503)
+
+<br>
+
+## <p id='attack'> Attack </p>
+
+- [Reverse Shell Cheat Sheet](https://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet)
