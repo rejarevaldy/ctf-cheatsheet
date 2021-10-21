@@ -5,7 +5,8 @@
 - <a href="#gobuster">Gobuster</a>
 - <a href="#sqlmap">Sqlmap</a>
 - <a href="#reverse">Reverse</a>
-- <a href="#c-cheatsheet">C Cheatsheet</a>
+- <a href="#assembly">Assembly</a>
+- <a href="#c-programming">C Cheatsheet</a>
 - <a href="#reverse-shell">Reverse Shell</a>
 - <a href="#iptables">IP Tables</a>
 
