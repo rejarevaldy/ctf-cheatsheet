@@ -4,11 +4,11 @@
 - <a href="#nmap">Nmap</a>
 - <a href="#gobuster">Gobuster</a>
 - <a href="#sqlmap">Sqlmap</a>
-- <a href="#reverse">Reverse</a>
-- <a href="#assembly">Assembly</a>
-- <a href="#c-programming">C Cheatsheet</a>
 - <a href="#reverse-shell">Reverse Shell</a>
 - <a href="#iptables">IP Tables</a>
+- <a href="#reverse-engineering">Reverse</a>
+- <a href="#assembly">Assembly</a>
+- <a href="#c-programming">C Cheatsheet</a>
 
 
 <br>
@@ -94,7 +94,54 @@ sqlmap -r Belajar/learn/sqlmap/latihan.txt --dbs
 
 <br>
 
-# Reverse
+# Reverse Shell
+
+#### Python Spawning Bash
+```
+python -c 'import pty; pty.spawn("/bin/bash")'
+```
+#### Export Shell
+```
+export SHELL=bash
+export TERM=xterm-256color
+```
+
+<br>
+
+# Iptables
+
+#### Show Iptables with Numbers
+```
+iptables -L --line-numbers
+```
+#### Remove All Rules
+```
+iptables -F
+```
+#### Delete Spesific Rule
+```
+iptables -D [CHAIN] [NUMBER]
+```
+Example :
+```
+iptables -D INPUT 3
+```
+#### Save Permanently Iptables
+```
+sudo /sbin/iptables-save
+```
+#### Filter Packet from Spesific Port
+```
+iptables -A [CHAIN] -p [PROTOCOL] --dport [PORT] -j [ACCEPT/DROP]
+```
+Example :
+```
+iptables -A INPUT -p tcp --dport 22 -j DROP
+```
+
+<br>
+
+# Reverse Engineering
 
 #### CLI Tools
 
@@ -230,48 +277,3 @@ sqlmap -r Belajar/learn/sqlmap/latihan.txt --dbs
 | Little Endian | Bytes in there reverse order. _"Least significant byte first"_  0x12345678 = \x78\x56\x34\x12 |
 
 <br>
-
-# Reverse Shell
-
-#### Python Spawning Bash
-```
-python -c 'import pty; pty.spawn("/bin/bash")'
-```
-#### Export Shell
-```
-export SHELL=bash
-export TERM=xterm-256color
-```
-
-<br>
-
-# Iptables
-
-#### Show Iptables with Numbers
-```
-iptables -L --line-numbers
-```
-#### Remove All Rules
-```
-iptables -F
-```
-#### Delete Spesific Rule
-```
-iptables -D [CHAIN] [NUMBER]
-```
-Example :
-```
-iptables -D INPUT 3
-```
-#### Save Permanently Iptables
-```
-sudo /sbin/iptables-save
-```
-#### Filter Packet from Spesific Port
-```
-iptables -A [CHAIN] -p [PROTOCOL] --dport [PORT] -j [ACCEPT/DROP]
-```
-Example :
-```
-iptables -A INPUT -p tcp --dport 22 -j DROP
-```
