@@ -5,7 +5,10 @@
 - <a href="#gobuster">Gobuster</a>
 - <a href="#sqlmap">Sqlmap</a>
 - <a href="#reverse">Reverse</a>
+- <a href="#c-cheatsheet">C Cheatsheet</a>
 - <a href="#reverse-shell">Reverse Shell</a>
+- <a href="#iptables">IP Tables</a>
+
 
 <br>
 
@@ -191,6 +194,7 @@ sqlmap -r Belajar/learn/sqlmap/latihan.txt --dbs
 | Big Endian| Bytes in there normal order. _"Most significant byte first"_  0x12345678 = \x12\x34\x56\x78 |
 | Little Endian | Bytes in there reverse order. _"Least significant byte first"_  0x12345678 = \x78\x56\x34\x12 |
 
+<br>
 
 # Reverse Shell
 
@@ -208,15 +212,15 @@ export TERM=xterm-256color
 
 # Iptables
 
-### Show Iptables with Numbers
+#### Show Iptables with Numbers
 ```
 iptables -L --line-numbers
 ```
-### Remove All Rules
+#### Remove All Rules
 ```
 iptables -F
 ```
-### Delete Spesific Rule
+#### Delete Spesific Rule
 ```
 iptables -D [CHAIN] [NUMBER]
 ```
@@ -224,11 +228,11 @@ Example :
 ```
 iptables -D INPUT 3
 ```
-### Save Permanently Iptables
+#### Save Permanently Iptables
 ```
 sudo /sbin/iptables-save
 ```
-### Filter Packet from Spesific Port
+#### Filter Packet from Spesific Port
 ```
 iptables -A [CHAIN] -p [PROTOCOL] --dport [PORT] -j [ACCEPT/DROP]
 ```
