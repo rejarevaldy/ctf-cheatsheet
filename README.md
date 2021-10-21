@@ -6,6 +6,7 @@
 - <a href="#sqlmap">Sqlmap</a>
 - <a href="#reverse-shell">Reverse Shell</a>
 - <a href="#iptables">IP Tables</a>
+- <a href="#forensic">Forensic</a>
 - <a href="#reverse-engineering">Reverse</a>
 - <a href="#assembly">Assembly</a>
 - <a href="#c-programming">C Cheatsheet</a>
@@ -147,10 +148,13 @@ iptables -A INPUT -p tcp --dport 22 -j DROP
 | Name      | Extensions       | Command                                          |
 |-----------|------------------|--------------------------------------------------|
 | Zsteg     | PNG, BMP         | zsteg [FILE]                                     |
-| Steghide  | JPG/JPEG, AV, AU | steghide info [FILE] ; steghide extract -sF [FILE] |
+| Steghide  | JPG/JPEG, AV, AU | steghide info [FILE] 
+steghide extract -sF [FILE] |
 | Stegsolve | JPG, PNG, BMP    | ./stegsolve.jar                                  |
 | Binwalk   | JPG, PNG, BMP    | binwalk -e [FILE]                                |
 | Jsteg     | JPG              | jsteg reveal [IMAGE JPG] [FILE OUTPUT]           |
+
+<br>
 
 # Reverse Engineering
 
