@@ -109,7 +109,41 @@ sqlmap -r Belajar/learn/sqlmap/latihan.txt --dbs
 
 <br>
 
-# C Cheatsheet
+# Assembly
+
+#### Register
+| Name | Notes                                                                                                           |    Type   | 64-bit  long | 32-bit int | 16-bit short | 8-bit char |
+|:----:|-----------------------------------------------------------------------------------------------------------------|:---------:|:------------:|:----------:|:------------:|:----------:|
+| rax  | Values are returned from functions in this register.                                                            | scratch   | rax          | eax        | ax           | ah and al  |
+| rcx  | Typical register.  Some instructions also use it as a counter.                                                  | scratch   | rcx          | ecx        | cx           | ch and cl  |
+| rdx  | Scratch register.                                                                                               | scratch   | rdx          | edx        | dx           | dh and dl  |
+| rbx  | Preserved register: don't use it without saving it!                                                             | preserved | rbx          | ebx        | bx           | bh and bl  |
+| rsp  | The stack pointer. Point to the top of the stack                                                                | preserved | rsp          | esp        | sp           | spl        |
+| rsi  | Scratch register used to pass function argument #2 in 64-bit Linux.    In 64-bit Windows, a preserved register. | scratch   | rsi          | esi        | si           | sil        |
+| rdi  | Scratch register and function argument #1 in 64-bit Linux.   In 64-bit Windows, a preserved register.           | scratch   | rdi          | edi        | di           | dil        |
+
+#### Memory Access
+| C/C++ datatype 	| Bits 	| Bytes 	| Register 	| Access memory 	| Allocate memory 	|
+|----------------	|------	|-------	|----------	|---------------	|-----------------	|
+| char           	| 8    	| 1     	| al       	| BYTE [ptr]    	| db              	|
+| short          	| 16   	| 2     	| ax       	| WORD [ptr]    	| dw              	|
+| int            	| 32   	| 4     	| eax      	| DWORD [ptr]   	| dd              	|
+| long           	| 63   	| 8     	| rax      	| QWORD [ptr]   	| dq              	|
+
+#### Instructions (basically identical to 32-bit x86)
+| Mnemonic     	| Purpose                                                                                                                                                                            	| Examples                                                                                                          	|
+|--------------	|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|-------------------------------------------------------------------------------------------------------------------	|
+| mov dest,src 	| Move data between registers, load immediate data into registers, move data between registers and memory.                                                                           	| mov rax 4,; Load constant into rax mov rdx,rax ; Copy rax into rdx mov rdx,[123] ; Copy rdx to memory address 123 	|
+| push src     	| Insert a value onto the stack.Useful for passing arguments, saving registers, etc.                                                                                                 	| push rbp                                                                                                          	|
+| pop dest     	| Remove topmost from the stack. Equivalent to "mov dest, [rsp]; add 8,rsp"                                                                                                          	| pop rbp                                                                                                           	|
+| cmp a,b      	| Compare two values. Sets flags that are used by the conditional jumps (below).                                                                                                     	| cmp rax,10                                                                                                        	|
+| jmp label    	| Goto the instruction label. Skips anything else in the way                                                                                                                         	| jmp post_mem mov [0],rax ; Write to NULL! post_mem: ; OK here...                                                  	|
+| add dest,src 	| dest=dest+src                                                                                                                                                                      	| add rax,rdx ;   Add rbx to rax                                                                                    	|
+| jl  label    	| Goto label if previous comparison came out as less-than. OPther Conditionals avaible are:  jle (<=), je (==),   jge (>=), jg (>),   jne(!=), jb (<),  jbe (<=), ja (>),  jae (>=). 	| jl loop_start; Jump if rax<10                                                        |
+
+<br>
+
+# C Programming
 
 #### Placeholder
 |Placeholder   |Describe   |
@@ -188,7 +222,7 @@ sqlmap -r Belajar/learn/sqlmap/latihan.txt --dbs
 | Boolean | Either a True or False.  1-Bit in size. | 1-bit |
 
 
-## Endianness
+#### Endianness
 | Subject | Description |
 | --- | --- |
 | Big Endian| Bytes in there normal order. _"Most significant byte first"_  0x12345678 = \x12\x34\x56\x78 |
