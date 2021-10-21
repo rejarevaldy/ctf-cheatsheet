@@ -141,6 +141,17 @@ iptables -A INPUT -p tcp --dport 22 -j DROP
 
 <br>
 
+# Forensic
+
+#### Tools
+| Name      | Extensions       | Command                                          |
+|-----------|------------------|--------------------------------------------------|
+| Zsteg     | PNG, BMP         | zsteg [FILE]                                     |
+| Steghide  | JPG/JPEG, AV, AU | steghide info [FILE] ; steghide extract -sF [FILE] |
+| Stegsolve | JPG, PNG, BMP    | ./stegsolve.jar                                  |
+| Binwalk   | JPG, PNG, BMP    | binwalk -e [FILE]                                |
+| Jsteg     | JPG              | jsteg reveal [IMAGE JPG] [FILE OUTPUT]           |
+
 # Reverse Engineering
 
 #### CLI Tools
