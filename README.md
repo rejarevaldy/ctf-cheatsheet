@@ -152,6 +152,8 @@ iptables -A INPUT -p tcp --dport 22 -j DROP
 | Stegsolve | JPG, PNG, BMP    | ./stegsolve.jar                                  |
 | Binwalk   | JPG, PNG, BMP    | binwalk -e [FILE]                                |
 | Jsteg     | JPG              | jsteg reveal [IMAGE JPG] [FILE OUTPUT]           |
+| Foremost     | *              | foremost           |
+
 
 <br>
 
