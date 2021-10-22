@@ -207,6 +207,11 @@ iptables -A INPUT -p tcp --dport 22 -j DROP
 
 # C Programming
 
+#### Decompile
+```c
+gcc -g [file] -o [output]
+```
+
 #### Placeholder
 |Placeholder   |Describe   |
 |---|---|
