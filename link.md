@@ -29,6 +29,7 @@
 - [Magic Eye Solver](https://magiceye.ecksdee.co.uk/)
 - [Stegonline](https://stegonline.georgeom.net/upload)
 - [Pcap Online](https://apackets.com/)
+- [File Signature](https://www.garykessler.net/library/file_sigs.html)
 
 <br>
 
