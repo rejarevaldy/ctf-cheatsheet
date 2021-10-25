@@ -31,6 +31,7 @@
 - [Pcap Online](https://apackets.com/)
 - [File Signature](https://www.garykessler.net/library/file_sigs.html)
 - [Sleuth Kit Tools](http://wiki.sleuthkit.org/index.php?title=TSK_Tool_Overview)
+- [Hack Tricks Wireshark](https://book.hacktricks.xyz/forensics/basic-forensic-methodology/pcap-inspection/wireshark-tricks)
 
 <br>
 
