@@ -70,6 +70,8 @@
 
 - [Mengatur hak akses user linux terhadap shell dan sudoers](https://www.belajarlinux.org/cara-mengatur-hak-akses-user-linux-terhadap-shell-dan-sudoers/)
 
+- [Disable_functions bypass - dl function](https://github.com/carlospolop/hacktricks/blob/master/pentesting/pentesting-web/php-tricks-esp/php-useful-functions-disable_functions-open_basedir-bypass/disable_functions-bypass-dl-function.md)
+
 
 
 ## MATERI ##
