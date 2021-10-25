@@ -14,6 +14,13 @@
 
 <br>
 
+# Linux Command
+
+#### Find all extension php
+```
+find / find . -type f  -name '*.php'
+```
+
 # John The Ripper
 
 #### Bruteforce File
