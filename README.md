@@ -90,7 +90,7 @@ sqlmap -r [FILE LOCATION] --dump
 ```
 Example :
 ```
-sqlmap -r Belajar/learn/sqlmap/latihan.txt --dbs
+sqlmap -r [FILE LOCATION] --dbs
 ```
 
 <br>
