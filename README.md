@@ -66,6 +66,11 @@ hydra -V -l admin -P /usr/share/wordlists/rockyou.txt 10.10.10.10 http-get-form 
 nmap -v -A [IP]  
 ```
 
+#### Vuln scan
+```
+nmap -sV -vv --script vuln [IP]
+```
+
 <br>
 
 # Gobuster
