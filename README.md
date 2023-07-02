@@ -10,8 +10,6 @@
 - <a href="#reverse-engineering">Reverse</a>
 - <a href="#assembly">Assembly</a>
 - <a href="#c-programming">C Cheatsheet</a>
-- <a href="#ip-tables">IP Tables</a>
-
 
 <br>
 
@@ -305,14 +303,4 @@ gcc -g [file] -o [output]
 
 <br>
 
-# IP Tables
 
-```
-sudo /sbin/iptables-save
-```
-
-## Block Range
-
-```
-sudo iptables -A INPUT -m iprange --src-range 192.168.1.130-192.168.1.180 -j REJECT
-```
