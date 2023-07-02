@@ -307,6 +307,10 @@ gcc -g [file] -o [output]
 
 # IP Tables
 
+```
+sudo /sbin/iptables-save
+```
+
 ## Block Range
 
 ```
